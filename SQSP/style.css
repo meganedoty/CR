@@ -1,0 +1,471 @@
+/* CUSTOM CSS CODE FOR CARLA ROZMAN SQSP WEBSITE */
+
+
+/* PAGE */
+
+.summary-excerpt {
+  display: block !important;
+}
+
+body {
+  letter-spacing: .75px;
+  text-rendering: geometricPrecision;
+}
+
+#canvas {
+  padding-top: 0;
+  max-width: 1100px !important;
+}
+
+/* NAVIGATION */
+
+#topNav {
+  //padding-top: 48px;
+}
+
+#logo {
+  //margin-left: -.75em;
+  text-align: left;
+}
+
+#header {
+  border-bottom: 1px solid #000;
+  padding-bottom: 1em;
+  margin-top: 4em;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: left;
+  align-items: flex-end;
+}
+
+header:before,
+header:after{
+  display: none !important;
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+.page-header {
+  padding-top: 0px;
+  margin-top: -1.25em;
+}
+
+#topNav nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 830px) {
+  #header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .site-title .logo {
+    margin: 0 auto !important;
+    margin-top: -1em !important;
+  }
+  #logo {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+   margin-bottom: 1em;
+    clear: both;
+  }
+  #topNav nav {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #header #topNav {
+    display: block !important;
+  }
+  #mobileMenuLink {
+    display: none !important;
+  }
+  #logo h1 {
+    letter-spacing: 5px !important;
+  }
+  #topNav nav ul li {
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  #mobileMenuLink {
+    //display: block !important;
+    margin-bottom: -1em;
+  }
+  #mobileNav {
+    margin: -1px 0 15px;
+    border-bottom: 1px solid #000;
+  }
+  #mobileNavWrapper.wrapper {
+    padding: 0!important;
+  }
+  #header #topNav {
+    //display: none!important;
+    flex-wrap: wrap;
+    margin-top: -.5em;
+    margin-bottom: .5em;
+  }  
+  #topNav nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #logo {
+    margin-top: -1em;
+    padding-bottom: 0;
+  }
+  #header {
+    padding-bottom: 0;
+  }
+}
+
+/* HOME */
+
+h3.homeHighlights {
+  color: #000;
+  font-size: 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: .6em 0 .5em 0;
+  margin-top: -1.625em !important;
+  margin-bottom: -.075em !important;
+}
+
+time .summary-metadata-time, 
+time {
+  text-transform: uppercase !important;
+  color: #000 !important;
+  font-size: .95em !important;
+  display: none;
+}
+
+.entry-content div .row div .row:first-child {
+  display: none;
+}
+
+.meta-row .tags,
+.meta-row .categories,
+.meta-row .sqs-simple-like {
+  display: none;
+}
+
+article footer {
+  margin-top: -1.875em;
+}
+
+.collection-type-blog .post-divider {
+  background-color: #aaa;
+  width: 90%;
+  margin: 25px auto;
+}
+
+/* WORK PROJECT PAGE 
+	& HOME RECENT WORK FEATURE */
+
+img.thumb-image {
+  padding-bottom: 2.5em;
+}
+
+.projectInfo .projectName,
+.projectInfo .projectCategories,
+.projectInfo .description {
+	display: block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.projectInfo .projectCategories {
+  width: 100%;
+  display: inline-block;
+}
+
+.projectInfo .projectCategories ul {
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: -1em !important;
+}
+
+.projectInfo .projectCategories ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.projectInfo .projectCategories ul li:after {
+  content: ',';
+  display: inline-block;
+}
+
+.projectInfo .projectCategories ul li:last-child:after {
+  display: none;
+}
+
+.projectInfo .projectName h1 {
+  text-transform: none;
+  font-size: 2.325em;
+}
+
+h2.projectName.home {
+  font-size: 1.075em;
+  padding-top: 0;
+  margin-top: -.95em !important;
+}
+
+.projectInfo .projectCategories ul,
+.projectInfo .description p {
+  padding-top: 12px;
+}
+
+.projectInfo .projectCategories li,
+.projectInfo .projectCategories li h4,
+.projectCategories {
+  text-transform: uppercase;
+  list-style: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+h4.projectCategories.home {
+  font-size: .75em;
+  padding-top: 0;
+  margin-top: -.5em;
+}
+
+.projectInfo .description p {
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: .625px;
+}
+
+@media only screen and (max-width: 750px) {
+  #page {
+    padding: 25px 0;
+  }
+  #projectThumbs {
+    padding-top: 25px;
+  }
+  .page-project h1 {
+    margin-bottom: 0!important;
+  }
+}
+
+/* #projectPages + #projectThumbs {
+  display: none
+} */
+
+/* BLOG */
+
+article:first-child {
+  padding-top: 1em;
+}
+
+article.post-type-text,
+.page-project {
+  width: 72%;
+  margin: 0 auto !important;
+}
+
+.special-content{
+  margin-top: 1.675em;
+}
+
+.post-divider {
+  width: 72% !important;
+  margin-top: 2em!important;
+  margin-bottom: 2.5em!important;
+}
+@media only screen and (max-width: 800px) {
+  article.post-type-text,
+  .page-project,
+  .post-divider{
+    width: 90% !Important;
+  }
+}
+@media only screen and (max-width: 390px) {
+  article.post-type-text,
+  .page-project,
+  .post-divider {
+    width: 100%!important;
+  }
+}
+
+header h1.entry-title {
+  margin-bottom: -.125em !important;
+  text-transform: none;
+}
+
+/* ABOUT */
+
+.aboutSpecialties {
+  font-size: 2.5em !important;
+  line-height: 1.4;
+}
+
+.aboutText, article .aboutText {
+  width: 80% !important;
+  margin: 1.9em auto;
+}
+
+.aboutText h3 {
+  color: #000;
+  letter-spacing: 3px;
+  font-size: 1.25em;
+  margin-top: 2.5em !important;
+  margin-bottom: .5em;
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutText,
+  article .aboutText {
+    width: 100% !important;
+    margin: .5em auto!important;
+  }
+  article:first-child {
+    padding-top: 0!important;
+  }
+  p.aboutSpecialties {
+    font-size: 1.625em!important;
+  }
+}
+@media only screen and (max-width: 390px) {
+  p.aboutSpecialties {
+    font-size: 1.25em!important;
+  }
+}
+
+/* FOOTER */
+
+#footer {
+  border-top: 1px solid #000;
+  padding-top: 2.325em;
+  margin-top: -1em;
+}
+
+#custom-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer:before,
+footer:after {
+  display: none!important;
+}
+
+#footerAbout,
+#footerSocial {
+  vertical-align: top;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#footerAbout {
+	width: 50%;
+	padding-right: 1em;
+  box-sizing: border-box;
+}
+
+#footerSocial{
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: auto;
+}
+
+#footerSocial p {
+  vertical-align: bottom !important;
+  padding-top: 3.325em;
+}
+
+#footerSocial#socialIcons {
+  display: block;
+}
+
+#footerSocial img {
+  padding: 0 2px;
+  -webkit-transition: 1s opacity ease;
+  transition: 1s opacity ease;
+}
+
+#footerSocial img:hover {
+  opacity: .65;
+}
+
+#footerSocial a {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background-size: 28px 28px !important;
+}
+
+#footerSocial a.facebook {
+    background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57afe009c534a5bee9bd163d/1471143945346/facebook.png") no-repeat
+}
+
+#footerSocial a.facebook:hover {
+  background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57b36588be659468fb707566/1471374728325/facebook-hover.png") no-repeat;
+}
+
+#footerSocial a.instagram {
+    background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57afe00bc534a5bee9bd1651/1471143947996/instagram.png") no-repeat;
+}
+
+#footerSocial a.instagram:hover {
+  background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57b365d82994cab7385c6f3e/1471374808793/instagram-hover.png") no-repeat;
+}
+
+#footerSocial a.linkedin {
+    background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57afe010c534a5bee9bd1664/1471143952944/linkedin.png") no-repeat;
+}
+
+#footerSocial a.linkedin:hover {
+  background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57b365ffbebafbb9f4d6dffd/1471374847258/linkedin-hover.png") no-repeat;
+}
+
+#footerSocial a.tumblr {
+    background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57afe014c534a5bee9bd1672/1471143956249/tumblr.png") no-repeat;
+}
+
+#footerSocial a.tumblr:hover {
+  background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57b36626197aea37dfc3abb7/1471374886696/tumblr-hover.png") no-repeat;
+}
+
+#footerSocial a.twitter {
+    background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57afe017c534a5bee9bd1677/1471143959393/twitter.png") no-repeat;
+}
+
+#footerSocial a.twitter:hover {
+  background: url("http://static1.squarespace.com/static/5797ad1cb8a79b0223ad9563/t/57b36672197aea37dfc3b080/1471374962657/twitter-hover.png") no-repeat;
+}
+
+@media only screen and (max-width: 480px) {
+  #footer {
+    padding-top: .5em;
+  }
+  #custom-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  #footerAbout {
+    width: 100%;
+    text-align: center;
+    margin-bottom: .625em;
+    margin-top: 0;
+  }
+  #footerSocial {
+    margin: 0 auto;
+  }
+}
