@@ -19,12 +19,11 @@ body {
 
 /* NAVIGATION */
 
-#topNav {
-  //padding-top: 48px;
+#topNav nav {
+  float: none;
 }
 
 #logo {
-  //margin-left: -.75em;
   text-align: left;
 }
 
@@ -38,7 +37,7 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   text-align: left;
-  align-items: flex-end;
+  align-items: baseline;
 }
 
 header:before,
@@ -60,15 +59,7 @@ header:after{
   flex-wrap: nowrap;
 }
 
-@media only screen and (max-width: 830px) {
-  #header {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .site-title .logo {
-    margin: 0 auto !important;
-    margin-top: -1em !important;
-  }
+
   #logo {
     text-align: center;
     display: flex;
@@ -80,8 +71,17 @@ header:after{
   #topNav nav {
     clear: both;
   }
-}
 
+@media only screen and (max-width: 830px) {
+  #header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .site-title .logo {
+    margin: 0 auto !important;
+    margin-top: -1em !important;
+  }
+}
 @media only screen and (max-width: 750px) {
   #header #topNav {
     display: block !important;
@@ -108,6 +108,9 @@ header:after{
   #mobileNavWrapper.wrapper {
     padding: 0!important;
   }
+  .page-header {
+    margin-top: -2.25em!important;
+  }
   #header #topNav {
     //display: none!important;
     flex-wrap: wrap;
@@ -124,6 +127,12 @@ header:after{
   }
   #header {
     padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  h2.projectName.home {
+    padding-bottom: 1.5em;
   }
 }
 
@@ -260,6 +269,11 @@ h4.projectCategories.home {
     margin-bottom: 0!important;
   }
 }
+@media only screen and (max-width: 390px) {
+  .projectInfo .projectName {
+    margin-top: -2.5em;
+  }
+}
 
 /* #projectPages + #projectThumbs {
   display: none
@@ -293,6 +307,16 @@ article.post-type-text,
     width: 90% !Important;
   }
 }
+@media only screen and (max-width: 750px) {
+  .article-list,
+  .article-wrapper {
+    padding-top: 1em;
+  }
+  header h1.entry-title {
+    padding-bottom: ;
+    margin-bottom: -1em!important;
+  }
+}
 @media only screen and (max-width: 390px) {
   article.post-type-text,
   .page-project,
@@ -302,7 +326,7 @@ article.post-type-text,
 }
 
 header h1.entry-title {
-  margin-bottom: -.125em !important;
+  margin-bottom: -.5em !important;
   text-transform: none;
 }
 
@@ -332,7 +356,7 @@ header h1.entry-title {
     width: 100% !important;
     margin: .5em auto!important;
   }
-  article:first-child {
+  article.aboutText:first-child {
     padding-top: 0!important;
   }
   p.aboutSpecialties {
