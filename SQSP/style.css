@@ -18,9 +18,13 @@ body {
   #projectPages h1 {
     margin-bottom: .125em!important;
     padding-bottom: 0;
+    line-height: 1.2;
   }
   p {
     line-height: 1.5;
+  }
+  #collection-5797b0556b8f5bacd0c9b2c9 .sqs-block-gallery {
+    padding-bottom: 1.5em!important;
   }
 }
 
@@ -35,7 +39,7 @@ body {
 }
 
 #header {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #555;
   padding-bottom: 1em;
   margin-top: 4em;
   margin-bottom: 0;
@@ -108,9 +112,20 @@ header:after{
     display: block !important;
     margin-bottom: -2.5em;
   }
+  #mobileMenuLink a,
+  #mobileNavWrapper .mobileNav li a {
+    font-size: .88rem!important;
+  }
   #mobileNav {
     margin: -1px 0 15px;
-    border-bottom: 1px solid #000;
+    padding-bottom: 0px!important;
+    border-bottom: 1px solid #555;
+  }
+  #mobileNav ul li:first-child {
+    padding-top: .25em;
+  }
+  #mobileNav ul li:last-child {
+    margin-bottom: .5em!important;
   }
   #mobileNavWrapper.wrapper {
     padding: 0!important;
@@ -151,8 +166,8 @@ h3.homeHighlights {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
   padding: .6em 0 .5em 0;
   margin-top: -1.625em !important;
   margin-bottom: -.075em !important;
@@ -266,6 +281,9 @@ h4.projectCategories.home {
 }
 
 .col-container {
+  border-top: 1px solid #aaa;
+  padding-top: 3.5em;
+  margin-top: 2em!important;
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
@@ -283,25 +301,20 @@ h4.projectCategories.home {
   padding-left: 0;
 }
 .col-container li {
-	font-size: .875em;
+	font-size: .79em;
     letter-spacing: 2px;
-    line-height: 1.55;  text-transform: uppercase;  
+    line-height: 1.75;  text-transform: uppercase;  
 }
 .col-container h3 {
   margin-bottom: -.325em;
   color: #000;
   font-size: 1.25em;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid;
-  -webkit-page-break-after: avoid;
-  page-break-after: avoid;
   margin-top: 0;
   line-height: 1;
   padding-bottom: 0;
 }
-.cat ul li:last-child {
-  padding-bottom: 1.25em;
+.cat {
+  padding: .5em 0;
 }
 
 @media only screen and (max-width: 750px) {
@@ -335,6 +348,11 @@ h4.projectCategories.home {
   }
   .image-caption-wrapper {
     padding-top: .875em!important;
+  }
+  .col-container {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
   }
 }
 
