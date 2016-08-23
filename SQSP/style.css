@@ -376,7 +376,9 @@ article:first-child {
 }
 
 article.post-type-text,
-.page-project {
+.page-project,
+#collection-type-index section#page,
+#collection-type-page section#page{
   width: 72%;
   margin: 0 auto !important;
 }
@@ -408,7 +410,9 @@ article.post-type-text,
   article.post-type-text,
   .page-project,
   .post-divider,
-  .collection-type-blog .pagination{
+  .collection-type-blog .pagination,
+  #collection-type-index section#page,
+  #collection-type-page section#page{
     width: 90% !Important;
    letter-spacing: 1px;
   }
@@ -427,7 +431,9 @@ article.post-type-text,
   article.post-type-text,
   .page-project,
   .post-divider,
-  .collection-type-blog .pagination{
+  .collection-type-blog .pagination,
+  #collection-type-index section#page,
+  #collection-type-page section#page{
     width: 100%!important;
   }
   h1.entry-title {
